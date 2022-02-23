@@ -22,4 +22,9 @@ class DollarTest {
         assertEquals("USD", Money.dollar(1).getCurrency());
     }
 
+    @Test
+    public void testDifferentClassEquality() {
+        assertEquals(new Money(10, "USD"), new Dollar(10, "USD"));
+    }
+
 }

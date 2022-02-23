@@ -22,4 +22,9 @@ class FrancTest {
         assertEquals("CHF", Money.franc(1).getCurrency());
     }
 
+    @Test
+    public void testDifferentClassEquality() {
+        assertEquals(new Money(10, "CHF"), new Franc(10, "CHF"));
+    }
+
 }
