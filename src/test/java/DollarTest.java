@@ -6,15 +6,15 @@ class DollarTest {
 
     @Test
     public void testMultiplication() {
-        Dollar dollar = new Dollar(5);
-        assertEquals(new Dollar(10), dollar.times(2));
-        assertEquals(new Dollar(15), dollar.times(3));
+        Money dollar = Money.dollar(5);
+        assertEquals(Money.dollar(10), dollar.times(2));
+        assertEquals(Money.dollar(15), dollar.times(3));
     }
 
     @Test
     public void testEquality() {
-        assertEquals(new Dollar(5), new Dollar(5));
-        assertNotEquals(new Dollar(5), new Dollar(6));
+        assertEquals(Money.dollar(5), Money.dollar(5));
+        assertNotEquals(Money.dollar(5), Money.dollar(6));
     }
 
 }

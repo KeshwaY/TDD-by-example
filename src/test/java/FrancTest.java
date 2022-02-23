@@ -6,15 +6,15 @@ class FrancTest {
 
     @Test
     public void testMultiplication() {
-        Franc franc = new Franc(5);
-        assertEquals(new Franc(10), franc.times(2));
-        assertEquals(new Franc(15), franc.times(3));
+        Money franc = Money.franc(5);
+        assertEquals(Money.franc(10), franc.times(2));
+        assertEquals(Money.franc(15), franc.times(3));
     }
 
     @Test
     public void testEquality() {
-        assertEquals(new Franc(5), new Franc(5));
-        assertNotEquals(new Franc(5), new Franc(6));
+        assertEquals(Money.franc(5), Money.franc(5));
+        assertNotEquals(Money.franc(5), Money.franc(6));
     }
 
 }

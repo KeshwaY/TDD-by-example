@@ -6,7 +6,7 @@ class MoneyTest {
 
     @Test
     public void compareDollarWithFranc() {
-        assertNotEquals(new Dollar(5), new Franc(5));
+        assertNotEquals(Money.dollar(5), Money.franc(5));
     }
 
 }
