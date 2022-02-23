@@ -17,4 +17,9 @@ class DollarTest {
         assertNotEquals(Money.dollar(5), Money.dollar(6));
     }
 
+    @Test
+    public void testCurrency() {
+        assertEquals("USD", Money.dollar(1).getCurrency());
+    }
+
 }
